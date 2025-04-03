@@ -1,0 +1,74 @@
+"$id": https://example.com/person.schema.json
+"$schema": https://json-schema.org/draft/2020-12/schema
+title: User preference
+type: object
+properties:
+  id:
+    description: User preference id
+    type: string
+    format: uuid
+  maximum-monthly-rent:
+    description: User's maximum rent
+    type: number
+    format: currency
+  roommate:
+    description: User's roommate preference (maximum number of roommates)
+    type: int
+  bathroom:
+    description: User's bathroom preference
+    type: string
+    enum:
+      - exclusive
+      - shared-1
+      - shared-2
+      - shared-3
+  laundry:
+    description: User's laundry preference
+    type: string
+    enum:
+      - in-unit
+      - in-building
+      - offsite
+  doorman:
+    description: User's doorman preference
+    type: string
+    enum:
+      - in-person
+      - virtual
+      - no-preference
+  elevator:
+    description: User's elevator preference
+    type: string
+    enum:
+      - yes
+      - no
+  gym:
+    description: User's gym preference
+    type: string
+    enum:
+      - yes
+      - no
+  pet:
+    description: User's pet preference
+    type: string
+    enum:
+      - any
+      - small-pets
+      - no-pets
+  furnish:
+    description: User's furnish preference
+    type: string
+    enum:
+      - furnished
+      - unfurnished
+required:
+  - id
+  - maximum-monthly-rent
+  - roommate
+  - bathroom
+  - laundry
+  - doorman
+  - elevator
+  - gym
+  - pet
+  - furnish
