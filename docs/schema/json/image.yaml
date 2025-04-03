@@ -1,0 +1,20 @@
+"$id": https://example.com/image.schema.json
+"$schema": https://json-schema.org/draft/2020-12/schema
+title: Image
+type: object
+properties:
+  height:
+    description: Image height
+    type: int
+  width:
+    description: Image width
+    type: int
+  source:
+    description: Image uri
+    type: string
+    format: uri
+required:
+  - id
+  - height
+  - width
+  - source

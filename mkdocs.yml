@@ -3,5 +3,8 @@ theme:
 site_name: My Docs
 nav:
   - Home: index.md
+  - Schema:
+      - Json: schema/json/
 plugins:
   - search
+  - include_dir_to_nav

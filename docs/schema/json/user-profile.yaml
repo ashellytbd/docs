@@ -1,0 +1,38 @@
+"$id": https://example.com/person.schema.json
+"$schema": https://json-schema.org/draft/2020-12/schema
+title: User profile
+type: object
+properties:
+  id:
+    description: User profile id
+    type: string
+    format: uuid
+  picture:
+    $ref: 'image.yaml'
+  sex:
+    description: User's sex
+    type: string
+    enum:
+      - male
+      - female
+  demographic:
+    description: User demographic
+    type: string
+    enum:
+      - Working professional
+      - Student
+  age:
+    description: User's age in years
+    type: integer
+    minimum: 0
+  pets:
+    description: User's pets
+    type: array
+    items:
+      $ref: 'pet.yaml'
+required:
+  - id
+  - sex
+  - demographic
+  - age
+  - pets
