@@ -7,18 +7,20 @@ properties:
     description: User profile id
     type: string
     format: uuid
+    example: 22a05ff0-d886-442e-9ff5-46229cb75937
   picture:
     $ref: 'image.yaml'
   sex:
     description: User's sex
     type: string
+    example: MALE
     enum:
-      - male
-      - female
-      - prefernot to say
+      - MALE
+      - FEMALE
   demographic:
     description: User demographic
     type: string
+    example: WORKING_PROFESSIONAL
     enum:
       - WORKING_PROFESSIONAL
       - UNDERGRAD

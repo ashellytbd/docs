@@ -7,6 +7,7 @@ properties:
     description: User private profile id
     type: string
     format: uuid
+    example: 22a05ff0-d886-442e-9ff5-46229cb75937
   birthdate:
     $ref: 'date.yaml'
   income:
@@ -14,6 +15,7 @@ properties:
     type: number
     format: currency
     minimum: 0
+    example: 100000
   vices:
     description: User vices
     type: object

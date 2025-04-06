@@ -7,6 +7,7 @@ properties:
     description: User profile id
     type: string
     format: uuid
+    example: 22a05ff0-d886-442e-9ff5-46229cb75937
   public:
     $ref: 'public-user-profile.yaml'
   private:
