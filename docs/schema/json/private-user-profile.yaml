@@ -1,0 +1,38 @@
+"$id": https://example.com/person.schema.json
+"$schema": https://json-schema.org/draft/2020-12/schema
+title: User profile
+type: object
+properties:
+  id:
+    description: User private profile id
+    type: string
+    format: uuid
+    example: 22a05ff0-d886-442e-9ff5-46229cb75937
+  birthdate:
+    $ref: 'date.yaml'
+  income:
+    description: Annual income
+    type: number
+    format: currency
+    minimum: 0
+    example: 100000
+  vices:
+    description: User vices
+    type: object
+    properties:
+      marijuana:
+        description: User marijuana usage
+        type: string
+        enum:
+          - Yes
+          - No
+          - Sometimes
+      smoking:
+        description: User smoking usage
+        type: string
+        enum:
+          - Yes
+          - No
+          - Sometimes
+required:
+  - id

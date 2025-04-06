@@ -1,0 +1,27 @@
+"$id": https://example.com/pet.schema.json
+"$schema": https://json-schema.org/draft/2020-12/schema
+title: Pet
+type: object
+properties:
+  id:
+    description: Pet id
+    type: string
+    format: uuid
+  name:
+    description: Pet name
+    type: string
+  picture:
+    description: Pet picture
+    type:
+      $ref: image.yaml
+  type:
+    description: Type of pet
+    type: string
+    enum:
+      - cat
+      - dog
+      - other
+required:
+  - id
+  - name
+  - type

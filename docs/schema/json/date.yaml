@@ -1,0 +1,17 @@
+"$id": https://example.com/image.schema.json
+"$schema": https://json-schema.org/draft/2020-12/schema
+title: Date
+type: object
+properties:
+  month:
+    description: Date month
+    type: integer
+    minimum: 1
+  day:
+    description: Day of month
+    type: integer
+    minimum: 1
+  year:
+    year: Year
+    type: integer
+    minimum: 1
