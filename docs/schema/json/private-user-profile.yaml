@@ -14,9 +14,23 @@ properties:
     type: number
     format: currency
     minimum: 0
-  creditscore:
-    description: Credit score
-    type: integer
-    minimum: 0
+  vices:
+    description: User vices
+    type: object
+    properties:
+      marijuana:
+        description: User marijuana usage
+        type: string
+        enum:
+          - Yes
+          - No
+          - Sometimes
+      smoking:
+        description: User smoking usage
+        type: string
+        enum:
+          - Yes
+          - No
+          - Sometimes
 required:
   - id

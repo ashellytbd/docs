@@ -15,22 +15,20 @@ properties:
     enum:
       - male
       - female
+      - prefernot to say
   demographic:
     description: User demographic
     type: string
     enum:
       - WORKING_PROFESSIONAL
-      - STUDENT
-  income:
-    description: Annual income
-    type: number
-    format: currency
-    minimum: 0
+      - UNDERGRAD
+      - GRAD
+      - UNEMPLOYED
   pets:
     description: User's pets
     type: array
     items:
-      $ref: 'pet.yaml'
+      $ref: pet.yaml
 required:
   - id
   - sex

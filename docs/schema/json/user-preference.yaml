@@ -41,19 +41,20 @@ properties:
     type: string
     enum:
       - yes
-      - no
+      - no-preference
   gym:
     description: User's gym preference
     type: string
     enum:
       - yes
-      - no
+      - no-preference
   pet:
     description: User's pet preference
     type: string
     enum:
       - any
-      - small-pets
+      - cat
+      - dog
       - no-pets
   furnish:
     description: User's furnish preference

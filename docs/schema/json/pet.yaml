@@ -19,8 +19,8 @@ properties:
     type: string
     enum:
       - cat
-      - small dog
-      - large dog
+      - dog
+      - other
 required:
   - id
   - name
